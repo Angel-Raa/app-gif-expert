@@ -1,0 +1,114 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: rgb(234, 234, 234);
+  }
+  
+  body {
+    padding: 60px;
+  }
+  
+  input {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(97, 32, 158);
+    color: black;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    margin-left: 8rem;
+    font-weight: bold;
+    color: #040d18; /* Cambia a un color que combine con tu diseño */
+    text-align: left; /* Centra el texto */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    letter-spacing: 2px; /* Añade espacio entre letras */
+  
+  }
+  .card-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    height: 0%;  
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+  
+  .card p {
+    background-color: white;
+    flex: 1;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    padding: 5px 20px 0px 20px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+  }
+
+  .form-input {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(97, 32, 158); /* Borde color púrpura */
+    color: black;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 10px 15px; /* Espaciado interno */
+    width: 100%; /* Ancho completo */
+    margin-bottom: 20px; /* Margen inferior para separar del contenido siguiente */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-input:focus {
+    border-color: rgb(97, 32, 158);
+    box-shadow: 0px 0px 5px rgba(97, 32, 158, 0.5);
+  }
+
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta el alto para centrar en toda la ventana */
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo semitransparente */
+  }
+  
+  .loading__spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid rgba(0, 0, 0, 0.1); /* Borde gris claro */
+    border-top-color: #3498db; /* Color principal */
+    border-radius: 50%; /* Forma circular */
+    animation: spin 1s linear infinite; /* Animación de giro */
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
