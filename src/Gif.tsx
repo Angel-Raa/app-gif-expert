@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import { CategoryForm, GifGrid } from "./components";
 
 const Gif = (): React.JSX.Element => {
-  const [categories, setCategories] = useState<string[]>([
-    "Dominican Republic",
-  ]);
+  const [categories, setCategories] = useState<string[]>([]);
 
   const onCategoryInput = (input: string): void => {
     if (input.trim().length < 1) return;
